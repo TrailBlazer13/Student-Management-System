@@ -83,7 +83,7 @@ public final class Student {
                 '}';
     }
 
-    // ✅ Static Nested Builder Class
+    // Static Nested Builder Class
     public static class Builder {
         private int id;
         private String firstName;
@@ -120,3 +120,38 @@ public final class Student {
         
         public Builder setGender(String gender) {
             this.gender = gender;
+
+        return this;
+        }
+
+        public Builder setEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Builder setPhoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        public Builder setAddress(String address) {
+            this.address = address;
+            return this;
+        }
+
+        public Builder setCourse(String course) {
+            this.course = course;
+            return this;
+        }
+
+        public Builder setYearLevel(int yearLevel) {
+            this.yearLevel = yearLevel;
+            return this;
+        }
+
+        public Student build() {
+            return new Student(this);
+        }
+        
+    }
+}
