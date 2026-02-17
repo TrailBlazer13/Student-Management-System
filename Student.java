@@ -104,3 +104,19 @@ public final class Student {
 
         public Builder setFirstName(String firstName) {
             this.firstName = firstName;
+
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public Builder setAge(int age) {
+            this.age = age;
+            return this;
+        }
+        
+        public Builder setGender(String gender) {
+            this.gender = gender;
