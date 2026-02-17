@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class Task3 {
+public class StudentManagementSystem {
     public static void main(String[] args) {
         String url = "jdbc:sqlite:students.db";
 
